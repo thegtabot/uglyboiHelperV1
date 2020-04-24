@@ -10,10 +10,14 @@ driver.get('https://www.okcupid.com/login')
 sleep(2)
 
 emailBox = driver.find_element_by_id('username')
-emailBox.send_keys('gtas321@gmail.com')
+
+#Enter your email
+emailBox.send_keys('example@gmail.com')
 
 passBox = driver.find_element_by_id('password')
-passBox.send_keys('gilmore1')
+
+#Enter your password
+passBox.send_keys('examplePassword')
 
 loginButton = driver.find_element_by_class_name('login-actions-button')
 loginButton.click()
